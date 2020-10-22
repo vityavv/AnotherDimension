@@ -17,5 +17,6 @@ public class Tester {
 		};
 		System.out.println(Arrays.toString(ArrayOps.sumRows(matrix)));
 		System.out.println("should be [15, 10, 4678, 98]");
+		System.out.println(ArrayOps.sum(matrix) == 4801);
 	}
 }
