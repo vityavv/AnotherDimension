@@ -17,6 +17,8 @@ public class Tester {
 		};
 		System.out.println(Arrays.toString(ArrayOps.sumRows(matrix)));
 		System.out.println("should be [15, 10, 4678, 98]");
+		System.out.println(Arrays.toString(ArrayOps.largestInRow(matrix)));
+		System.out.println("should be [5, 7, 8578, 45]");
 		System.out.println(ArrayOps.sum(matrix) == 4801);
 	}
 }
