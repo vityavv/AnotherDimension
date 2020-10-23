@@ -46,4 +46,19 @@ public class ArrayOps {
 		}
 		return true;
 	}
+	public static int sumCol(int[][] matrix, int col) {
+		int result = 0;
+		for (int i = 0; i < matrix.length; i++) {
+			result += matrix[i][col];
+		}
+		return result;
+	}
+	public static boolean isColMagic(int[][] matrix) {
+		if (matrix.length < 1) return true;
+		int prevSum = sumCol(matrix, 0);
+		for (int i = 1; i < matrix[0].length; i++) {
+			if (sumCol(matrix, i) != sumCol(matrix, i - 1)) return false;
+		}
+		return true;
+	}
 }

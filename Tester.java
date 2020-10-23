@@ -45,5 +45,11 @@ public class Tester {
 		System.out.println(ArrayOps.isRowMagic(rowMagic));
 		System.out.println(!ArrayOps.isRowMagic(rectMatrix));
 		System.out.println(!ArrayOps.isRowMagic(colMagic));
+		System.out.println(ArrayOps.isRowMagic(bothMagic));
+
+		System.out.println(!ArrayOps.isColMagic(rowMagic));
+		System.out.println(!ArrayOps.isColMagic(rectMatrix));
+		System.out.println(ArrayOps.isColMagic(colMagic));
+		System.out.println(ArrayOps.isColMagic(bothMagic));
 	}
 }
