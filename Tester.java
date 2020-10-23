@@ -17,8 +17,16 @@ public class Tester {
 		};
 		System.out.println(Arrays.toString(ArrayOps.sumRows(matrix)));
 		System.out.println("should be [15, 10, 4678, 98]");
-		System.out.println(Arrays.toString(ArrayOps.largestInRow(matrix)));
+		System.out.println(Arrays.toString(ArrayOps.largestInRows(matrix)));
 		System.out.println("should be [5, 7, 8578, 45]");
 		System.out.println(ArrayOps.sum(matrix) == 4801);
+		int[][] rectMatrix = {
+			{1, 2, 3, 4, 5},
+			{-1, -2, -3, -4, -5},
+			{-6, -7, -8, -9, -10},
+			{11, 44, 22, 66, 90}
+		};
+		System.out.println(Arrays.toString(ArrayOps.sumCols(rectMatrix)));
+		System.out.println("should be [5, 37, 14, 57, 80]");
 	}
 }
