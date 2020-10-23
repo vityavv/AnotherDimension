@@ -51,5 +51,12 @@ public class Tester {
 		System.out.println(!ArrayOps.isColMagic(rectMatrix));
 		System.out.println(ArrayOps.isColMagic(colMagic));
 		System.out.println(ArrayOps.isColMagic(bothMagic));
+
+		int[][] E = {
+			{2,4,2},
+			{2,2,2}
+		};
+		System.out.println(!ArrayOps.isLocationMagic(E, 0, 1));
+		System.out.println(ArrayOps.isLocationMagic(E, 1, 1));
 	}
 }
