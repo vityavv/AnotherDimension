@@ -38,4 +38,12 @@ public class ArrayOps {
 		}
 		return result;
 	}
+	public static boolean isRowMagic(int[][] matrix) {
+		if (matrix.length < 1) return true;
+		int prevSum = sum(matrix[0]);
+		for (int i = 1; i < matrix.length; i++) {
+			if (sum(matrix[i]) != prevSum) return false;
+		}
+		return true;
+	}
 }

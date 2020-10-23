@@ -28,5 +28,22 @@ public class Tester {
 		};
 		System.out.println(Arrays.toString(ArrayOps.sumCols(rectMatrix)));
 		System.out.println("should be [5, 37, 14, 57, 80]");
+		int[][] rowMagic = {
+			{1,2,3,4},
+			{2,3,4,1},
+			{3,4,1,2}
+		};
+		int[][] colMagic = {
+			{1,1,1},
+			{2,2,2},
+			{3,3,3}
+		};
+		int[][] bothMagic = {
+			{2,2,2},
+			{2,2,2}
+		};
+		System.out.println(ArrayOps.isRowMagic(rowMagic));
+		System.out.println(!ArrayOps.isRowMagic(rectMatrix));
+		System.out.println(!ArrayOps.isRowMagic(colMagic));
 	}
 }
